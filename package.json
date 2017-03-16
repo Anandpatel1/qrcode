@@ -1,0 +1,29 @@
+{
+  "name": "QRCode",
+  "version": "0.1.1",
+  "description": "QR Code from Images",
+  "author": "Mihir Shah",
+  "scripts": {
+    "start": "node app.js",
+    "predeploy": "echo I am about to deploy",
+    "postdeploy": "webApp deployed"
+  },
+  "dependencies": {
+    "express": "4.10.4",
+    "async": "0.9.0",
+    "jade": "1.8.1",
+    "morgan": "1.5.0",
+    "body-parser":"1.10.0",
+    "cookie-session":"1.1.0",
+    "express-session":"*",
+    "moment":"2.9.0",
+    "mimelib": "*",
+  	"starttls": "*",
+    "multer": "*",
+    "mkdirp": "*",
+  	"qr-image": "*"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "license": "BSD"
+}

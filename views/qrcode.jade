@@ -1,0 +1,16 @@
+head
+	title= title
+	meta(http-equiv="refresh" content="10")
+body
+	h1 Pop Noggins
+	div
+		table#mainTable(style="width: 100%")
+			- for(var i in fileObjs)
+				tr
+					td
+						img(src=fileObjs[i].qrcode)
+					td
+						video(width="320" height="240" controls)
+							source(src=fileObjs[i].original)
+					td
+						p= fileObjs[i].original
